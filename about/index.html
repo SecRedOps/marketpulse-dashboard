@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — sec.red</title>
+<style>
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    background: #0f1117;
+    color: #e0e0e0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px 24px;
+    line-height: 1.6;
+}
+h1 { color: #00d4aa; margin-bottom: 8px; }
+h2 {
+    color: #00d4aa;
+    border-bottom: 1px solid #2a2d37;
+    padding-bottom: 8px;
+    margin: 32px 0 16px;
+}
+h3 { color: #e0e0e0; margin: 20px 0 10px; }
+a { color: #00d4aa; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.subtitle { color: #888; margin-bottom: 24px; }
+.nav { margin-bottom: 24px; display: flex; gap: 16px; }
+.card {
+    background: #1a1d27;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 16px;
+    border: 1px solid #2a2d37;
+}
+.disclaimer-banner {
+    background: #2a2416;
+    border: 1px solid #ffaa00;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 24px;
+    color: #ffd89b;
+}
+.tier-elevated { border-left: 4px solid #ffaa00; }
+.tier-high { border-left: 4px solid #ff4444; }
+.badge {
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+}
+.badge-elevated { background: #ffaa00; color: #000; }
+.badge-high { background: #ff4444; color: #fff; }
+.score-large { font-size: 42px; font-weight: bold; color: #00d4aa; }
+.component-bars {
+    display: flex;
+    gap: 12px;
+    margin: 12px 0;
+    flex-wrap: wrap;
+}
+.component-bar {
+    background: #0f1117;
+    border: 1px solid #2a2d37;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 12px;
+    min-width: 140px;
+}
+.component-bar-label { color: #888; }
+.component-bar-value { color: #00d4aa; font-weight: bold; }
+.small-label {
+    font-size: 11px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1a1d27;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 12px 0;
+}
+th {
+    background: #2a2d37;
+    color: #888;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 10px;
+    text-align: left;
+}
+td { padding: 10px; border-top: 1px solid #2a2d37; }
+.footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #2a2d37;
+    color: #555;
+    font-size: 12px;
+    text-align: center;
+}
+.verify-button {
+    display: inline-block;
+    background: #00d4aa;
+    color: #0f1117;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin: 16px 0;
+}
+.verify-button:hover { background: #00b894; text-decoration: none; }
+
+</style>
+</head>
+<body>
+<p><a href="/">← Back to Dashboard</a></p>
+
+<h1>About sec.red</h1>
+<p class="subtitle">Forensic AI analysis of SEC regulatory filings</p>
+
+<h2>What sec.red Does</h2>
+<div class="card">
+  <p>sec.red is a research platform that applies AI to SEC regulatory filings to detect linguistic patterns that may indicate deteriorating corporate health. It is operated as an educational and research tool, not as a source of investment advice or recommendations.</p>
+</div>
+
+<h2>Research Foundation</h2>
+<div class="card">
+  <p>The platform builds on established academic research into the relationship between 10-K linguistic complexity, hedging language, and subsequent corporate performance. This approach aligns with the tradition of forensic financial analysis practised by firms such as Muddy Waters and Hindenburg Research, with one critical distinction: sec.red does not take or recommend positions in any security. The platform publishes hypotheses for educational review, not actionable trading signals.</p>
+</div>
+
+<h2>Methodology</h2>
+<div class="card">
+  <p>Every signal published on sec.red is scored across three independent components, then validated by a second AI model acting as an independent skeptic.</p>
+
+  <h3>Linguistic Drift (0–40)</h3>
+  <p>Claude analyses new 10-K and 10-Q filings against a baseline of prior filings from the same company. The model measures increases in hedging language, identifies new material risk clauses, detects shifts in tone, and tracks section length changes. Scores above 20 indicate clear divergence from historical disclosure patterns.</p>
+
+  <h3>Sentiment Divergence (0–30)</h3>
+  <p>Perplexity’s web-connected AI aggregates recent news, analyst ratings, and social media narrative. Claude then scores how bullish the external coverage is. High bullishness paired with rising linguistic drift indicates the divergence this platform exists to detect: markets and media remain optimistic while the company’s own regulatory filings grow more cautious.</p>
+
+  <h3>Price Momentum (0–30)</h3>
+  <p>Recent price action measured against 30-day and 90-day moving windows. Rising prices paired with deteriorating filing language represent the strongest divergence signal. Declining prices are weighted low — the market has already adjusted, and the analytical value is limited.</p>
+
+  <p>The three scores sum to a composite 0–100 risk score. Signals scoring 60+ are submitted to Google’s Gemini model for independent validation. Gemini reviews the filing excerpts, the component analysis, and the proposed dashboard summary. Only signals that pass Gemini’s independent review are published. Signals that fail validation are logged for audit but not displayed publicly.</p>
+</div>
+
+<h2>What sec.red Is Not</h2>
+<div class="card">
+  <p>To be explicit about the platform’s limits:</p>
+  <ul>
+    <li>Not investment advice</li>
+    <li>Not a prediction of price movement</li>
+    <li>Not a recommendation to buy, sell, short, or hold any security</li>
+    <li>Not a substitute for independent due diligence</li>
+    <li>Not a source of insider information — all analysis is based on public filings and public market data</li>
+  </ul>
+  <p style="margin-top: 16px;">Users must independently verify every claim against the source filings (linked from every signal) and consult qualified financial advisors before making investment decisions. The platform’s methodology is fully documented on this page specifically so users can evaluate the analytical approach rather than relying on the outputs uncritically.</p>
+</div>
+
+<h2>Data Sources</h2>
+<div class="card">
+  <ul>
+    <li>SEC EDGAR — public regulatory filings (10-K annual reports and 10-Q quarterly reports)</li>
+    <li>Perplexity AI — web-connected news aggregation and narrative synthesis</li>
+    <li>Google Finance — historical and current price data via Google Sheets integration</li>
+  </ul>
+</div>
+
+<!-- REMOVE THIS SECTION if FCA sandbox route is not pursued -->
+<h2>Regulatory Positioning</h2>
+<div class="card">
+  <p>This platform is being developed with consideration for the UK Financial Conduct Authority’s guidance on AI in financial services, including the Supercharged Sandbox framework announced in 2025. The operator welcomes feedback from regulators, academics, and financial services practitioners on both the methodology and the framing of outputs. Correspondence relating to regulatory review is particularly welcomed.</p>
+</div>
+
+<h2>Contact</h2>
+<div class="card">
+  <!-- User to update with real contact address -->
+  <p>General enquiries: <a href="mailto:contact@sec.red">contact@sec.red</a></p>
+</div>
+
+<div class="footer">Last updated: 2026-04-24 20:47 UTC</div>
+</body>
+</html>

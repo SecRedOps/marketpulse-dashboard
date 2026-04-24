@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signal Archive — sec.red</title>
+<style>
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    background: #0f1117;
+    color: #e0e0e0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px 24px;
+    line-height: 1.6;
+}
+h1 { color: #00d4aa; margin-bottom: 8px; }
+h2 {
+    color: #00d4aa;
+    border-bottom: 1px solid #2a2d37;
+    padding-bottom: 8px;
+    margin: 32px 0 16px;
+}
+h3 { color: #e0e0e0; margin: 20px 0 10px; }
+a { color: #00d4aa; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.subtitle { color: #888; margin-bottom: 24px; }
+.nav { margin-bottom: 24px; display: flex; gap: 16px; }
+.card {
+    background: #1a1d27;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 16px;
+    border: 1px solid #2a2d37;
+}
+.disclaimer-banner {
+    background: #2a2416;
+    border: 1px solid #ffaa00;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 24px;
+    color: #ffd89b;
+}
+.tier-elevated { border-left: 4px solid #ffaa00; }
+.tier-high { border-left: 4px solid #ff4444; }
+.badge {
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+}
+.badge-elevated { background: #ffaa00; color: #000; }
+.badge-high { background: #ff4444; color: #fff; }
+.score-large { font-size: 42px; font-weight: bold; color: #00d4aa; }
+.component-bars {
+    display: flex;
+    gap: 12px;
+    margin: 12px 0;
+    flex-wrap: wrap;
+}
+.component-bar {
+    background: #0f1117;
+    border: 1px solid #2a2d37;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 12px;
+    min-width: 140px;
+}
+.component-bar-label { color: #888; }
+.component-bar-value { color: #00d4aa; font-weight: bold; }
+.small-label {
+    font-size: 11px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1a1d27;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 12px 0;
+}
+th {
+    background: #2a2d37;
+    color: #888;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 10px;
+    text-align: left;
+}
+td { padding: 10px; border-top: 1px solid #2a2d37; }
+.footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #2a2d37;
+    color: #555;
+    font-size: 12px;
+    text-align: center;
+}
+.verify-button {
+    display: inline-block;
+    background: #00d4aa;
+    color: #0f1117;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin: 16px 0;
+}
+.verify-button:hover { background: #00b894; text-decoration: none; }
+
+</style>
+</head>
+<body>
+<p><a href="/">← Back to Dashboard</a></p>
+
+<h1>Signal Archive</h1>
+
+<div class="card">
+  Signals published to sec.red are retained on the dashboard for 30 days. Expired signals are archived here for historical reference. An archived signal indicates neither that the forensic hypothesis was correct nor that the underlying company experienced any specific outcome — it indicates only that the retention window has passed.
+</div>
+
+<div class="card">No archived signals yet. The archive will populate as signals reach the end of their retention window.</div>
+
+<div class="disclaimer-banner">
+  &#9888;&#65039; <strong>Not financial advice.</strong> All content is
+  AI-generated hypothesis for educational research. Always verify
+  against source filings. Consult a qualified financial advisor
+  before making investment decisions.
+</div>
+<div class="footer">Last updated: 2026-04-24 20:47 UTC</div>
+</body>
+</html>
